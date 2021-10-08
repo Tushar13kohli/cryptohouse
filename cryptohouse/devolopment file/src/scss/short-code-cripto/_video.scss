@@ -1,0 +1,125 @@
+.video-wrapper {
+    max-width: 1200px;
+    margin-left: 230px;
+}
+.video-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.video-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: var(--video-overlay);
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+    }
+    img{
+        width: 100%;
+    }
+    .play-button {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        a {
+            color: var(--white);
+            font-size: 50px;
+        }
+    }
+}
+.video-box-3 {
+    .play-button {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+        &::before, &::after{
+            position: absolute;
+            content: "";
+            background-color: var(--white);
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            transform: scale(.5);
+            animation: play_button 1.5s linear infinite;
+            opacity: 0;
+            z-index: -1;
+        }
+
+        &::after{
+            animation-delay: .5s;
+        }
+
+        a {
+            font-size: 50px;
+            line-height: 50px;
+            color: var(--white); 
+            position: relative;
+            z-index: 9;
+        }
+    }
+}
+
+@keyframes play_button {
+    0%{
+       transform: scale(.5);
+    }
+    50%{
+       opacity: .5;
+    }
+    100%{
+       transform: scale(2.5);
+       opacity: 0;
+    }
+}
+
+// Responsive 
+@media screen and (max-width: 1350px){
+    .video-wrapper {
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 1199px){
+    .video-wrapper {
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 991px){
+    .video-wrapper {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 767px){
+    .video-wrap{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 575px){
+    .video-wrap{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}

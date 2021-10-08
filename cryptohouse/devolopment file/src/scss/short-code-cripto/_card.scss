@@ -1,0 +1,222 @@
+
+
+
+.card-wrapper {
+    margin-left: 170px;
+    max-width: 1300px;
+}
+
+.card-top-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+.seingl-card {
+    box-shadow: 0px 10px 40px var(--shadow-color);
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+}
+.card-title {
+    margin-bottom: 0;
+    h6 {
+        line-height: 27px;
+        font-weight: 600;
+        padding-bottom: 25px;
+        margin-bottom: 0px;
+    }
+}
+
+.card-content {
+    padding-top: 20px;
+    h4 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 21px;
+        padding-bottom: 15px;
+        margin-bottom: 0px;
+        line-height: 1.5;
+    }
+    a {
+        margin: 0;
+    }
+}
+.card-style-4 {
+    grid-row: 2/span 2;
+    .card-content {
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+}
+.card-style-5 {
+    .card-content {
+        padding-top: 0;
+        padding-bottom: 0px;
+    }
+}
+.card-style-7 {
+    grid-column: 2/span 2;
+    .card-content {
+        p {
+            padding-bottom: 25px;
+        }
+    }
+}
+
+.card-footer-items {
+    display: flex;
+    justify-content: space-between;
+    .minute-show {
+        span {
+            font-size: 12px;
+            line-height: 18px;
+            color: var(--disable-color-2);
+        }
+    }
+    .card-social {
+        a {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid var(--disable-color);
+            color: var(--disable-color);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            margin-left: 20px;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                border-color: transparent;
+                color: var(--white);
+                background-color: var(--btn-primary);
+            }
+        }
+    }
+}
+
+
+
+
+
+.card-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding-top: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.bottom-single-card {
+    display: flex;
+    align-items: center;
+    .card-content {
+        padding-left: 20px;
+        p {
+            padding: 0;
+        }
+    }
+    .card-thumb {
+        img {
+            max-width: 170px;
+        }
+    }
+}
+.bottom-single-card-2 {
+    .card-content {
+        padding-left: 0;
+        padding-right: 20px;
+    }
+}
+
+
+// Responsive 
+@media screen and (max-width: 1350px){
+    .card-wrapper {
+        margin-left: 70px;
+    }
+}
+@media screen and (max-width: 1199px){
+    .card-wrapper {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 991px){
+    .seingl-card {
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .card-top-section {
+        grid-template-columns: 1fr 1fr;
+    }
+    .card-style-2 {
+        .card-thumb {
+            text-align: center;
+        }
+    }
+    .card-style-3 {
+        order: 7;
+        .card-thumb {
+            text-align: right;
+        }
+    }
+    .card-style-6 {
+        .card-title {
+            text-align: left;
+        }
+    }
+    .card-style-7 {
+        grid-column: unset;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .card-title {
+        h6 {
+            line-height: 26px;
+            padding-bottom: 12px;
+            font-size: 17px;
+        }
+    }
+    .card-footer-items {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .card-social {
+            margin-top: 10px;
+            a {
+                margin: 0px 5px;
+            }
+        }
+    }
+} 
+@media screen and (max-width: 575px) {
+    .card-top-section {
+        grid-template-columns: 1fr;
+    }
+    .seingl-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .card-style-7 {
+        .card-content {
+            p {
+                padding-bottom: 15px;
+            }
+        }
+    }
+    .card-bottom {
+        grid-template-columns: 1fr;
+    }
+}

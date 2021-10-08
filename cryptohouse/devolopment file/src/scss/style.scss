@@ -1,0 +1,59 @@
+/*------------------------------------------------------------------
+Common Stylesheet
+
+Project:CryptoHouse - Minimal & Professional Crypto Currency HTML Template   
+Build:     Bootstrap v5
+Author:    Electron Themes
+Author URL: https://www.electrontheme.com
+
+Table of Content
+1.variables
+2.reset
+3.common
+4.header
+5.footer
+6.homepage
+7.blog
+8.faq
+9.signin
+10.error
+11.responsive
+-------------------------------------------------------------------*/
+// all short code file call here
+//------------------------------
+@import 'custom/variables';
+@import 'custom/reset';
+@import 'custom/common';
+@import "short-code-cripto/button";
+@import "short-code-cripto/section-title";
+@import "short-code-cripto/typography";
+@import "short-code-cripto/all-option";
+@import "short-code-cripto/card";
+@import "short-code-cripto/accordion";
+@import "short-code-cripto/image";
+@import "short-code-cripto/video";
+@import "short-code-cripto/carousel";
+@import "short-code-cripto/pegination";
+@import "short-code-cripto/nav-tab";
+@import "short-code-cripto/alert-box";
+@import "short-code-cripto/counter";
+@import "short-code-cripto/short-code";
+@import "short-code-cripto/testimonial";
+@import "short-code-cripto/progress-bar";
+@import "short-code-cripto/coin-exchange";
+@import "short-code-cripto/input-field";
+@import "short-code-cripto/live-chart-table";
+@import "short-code-cripto/subscribe";
+@import "short-code-cripto/footer";
+// main file call here
+@import 'custom/header';
+@import 'custom/footer';
+@import 'custom/homepage';
+@import 'custom/blog';
+@import 'custom/faq';
+@import 'custom/signin';
+@import 'custom/error';
+@import 'custom/responsive';
+@import 'custom/homepage-three';
+@import 'custom/homepage-four';
+

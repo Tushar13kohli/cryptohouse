@@ -1,0 +1,193 @@
+.short-spacing{
+    padding: 50px 0px;
+}
+.footer-area {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: var(--footer-overlay);
+        opacity: 0.9;
+    }
+}
+.footer-shape {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 500px;
+}
+.footer-wrapper {
+    padding: 70px 10px;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+}
+
+.footer-content {
+    max-width: 490px;
+    margin: 0 auto;
+    p {
+        color: var(--white);
+        font-size: 16px;
+        line-height: 24px;
+        padding: 15px 0px 25px 0px;
+        margin-bottom: 0;
+    }
+    .footer-social {
+        a {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+           display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 5px;
+            border: 1px solid var(--success);
+            color: var(--white);
+            font-size: 14px;
+            position: relative;
+            transition: all .3s ease-in-out;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: var(--gradient);
+                opacity: 0;
+                border-radius: 50%;
+                z-index: -1;
+                transition: all .3s ease-in-out;
+            }
+            &:hover:before {
+                opacity: 1;
+            }
+            &:hover {
+                border: transparent;
+            }
+        }
+    }
+    .see-location {
+        color: var(--white);
+        line-height: 24px;
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+            font-size: 18px;
+            padding-left: 10px;
+        }
+    }
+}
+
+.footer-menu {
+    padding-top: 50px;
+    max-width: 810px;
+    margin: 0 auto;
+    ul {
+        li {
+            display: inline-block;
+            a {
+                display: block;
+                color: var(--white);
+                margin: 0px 15px;
+                font-size: 17px;
+                font-weight: 500;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    color: var(--success);
+                }
+            }
+        }
+    }
+}
+
+// Copy Right 
+.copy-right-area {
+    background: var(--footer-overlay);
+    padding: 20px 0px;
+}
+.copyright-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        color: var(--white);
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+}
+
+// Responsive 
+
+@media screen and (max-width: 991px) {
+    .short-spacing{
+        padding: 35px 0px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer-wrapper {
+        padding: 50px 0px;
+    }
+    .footer-menu {
+        ul {
+            li {
+                a {
+                    margin: 0px 10px 10px;
+                }
+            }
+        }
+    }
+    .copyright-wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+        p {
+            margin: 0px 10px 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .short-spacing{
+        padding: 25px 0px;
+    }
+    .footer-wrapper {
+        padding: 30px 0px;
+    }
+    .footer-content {
+        p {
+            padding: 10px 0px 15px 0px;
+        }
+        .see-location {
+            margin-top: 20px;
+        }
+    }
+    .footer-menu {
+        padding-top: 30px;
+        ul {
+            li {
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .copyright-wrapper {
+        text-align: center;
+        p {
+            margin: 0px 10px 10px;
+        }
+    }
+}

@@ -1,0 +1,328 @@
+
+
+@media all and (max-width: 1300px){
+    .countdown-sec{
+        padding-top: 200px;
+    }
+}
+
+@media all and (max-width: 1199px){
+    .footer-bitcoin-img-one,
+    .footer-bitcoin-img-two {
+        max-width: 14%;
+    }
+    .slide-text{
+        h1{
+            font-size: 50px;
+        }
+    }
+    .innerpage-header-sec {
+        padding-bottom: 125px;
+    }
+    .counter-wrap:not(.counter-secondary-wrap) {
+        border-radius: 15px;
+    }
+    .demo-banner-text{
+        h1{
+            font-size: 60px;
+        }
+        h2{
+            font-size: 38px;
+        }
+    }
+}
+
+
+@media all and (max-width: 991px){
+    .home1-block-wrap {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    
+    .hero-banner-text{
+        h2{
+            font-size: 35px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font-size: 18px;
+        }
+        .btn{
+            font-size: 17px;
+        }
+    }
+
+    .counter-wrap {
+        border-radius: 10px;
+        .col-sm-6{
+            &:nth-child(2){
+                &::before{
+                    content: none;
+                }
+            }
+        }
+    }
+
+    .video-cilp-wrapper{
+        margin-bottom: 50px;
+    }
+
+    .column-count-3,
+    .column-count-4{
+        column-count: 2;
+    }
+
+    .countdown-sec {
+        background: var(--primary-gradient2);
+        padding: 60px 0;
+    }
+
+    .roadmap-wrap{
+        .roadmap-img{
+            position: unset;
+            width: auto;
+            transform: unset;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-bottom: 30px;
+            max-width: 100%;
+        }
+    }
+
+
+    .roadmap {
+        li{
+            margin: 0;
+            &:first-child{
+                width: 50%;
+            }
+            &:last-child{
+                width: 50%;
+                margin: 0;
+            }
+            &:nth-child(2n+1){
+                justify-content: unset !important;
+            }
+            &:nth-child(2n){
+                justify-content: flex-end !important;
+            }
+        }
+    }
+
+    .copyright-sec, .footer-sec{
+        &.footer-curve-bg-light {
+            background: var(--light-gray) !important;
+            padding-top: 30px;
+        }
+    }
+    .article-lists{
+        padding-left: 80px;
+        .article-item::before{
+            font-size: 56px;
+        }
+    }
+    .article-item {
+        .ai-img{
+            width: 40%;
+            .ai-img-inner{
+                padding-top: 120%;
+            }
+        }
+    }
+
+}
+
+@media all and (max-width: 767px){
+    .timeline-sec{
+        &::before{
+            content: none;
+        }
+    }
+
+    .copyright-inner {
+        flex-direction: column;
+        text-align: center;
+        p{
+            order: 3;
+        }
+    }
+
+    .call-to-action {
+        text-align: center;
+        display: block;
+        .cta-left{
+            width: 100%;
+            flex: unset;
+            margin-right: 0;
+        }
+        .cta-right{
+            margin-top: 20px;
+        }
+    }
+
+    .roadmap {
+        li{
+            width: 100%;
+            &:first-child, &:last-child{
+                width: 100%;
+            }
+        }
+    }
+    .roadmap-item{
+        max-width: 400px;
+    }
+
+    .article-item{
+        .ai-img {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+            max-width: 100%;
+            .ai-img-inner{
+                padding-top: 60%;
+            }
+        }
+    }
+    
+    .sec-title {
+        margin-bottom: 40px;
+        h1{
+            font-size: 45px;
+            &[data-watermark]{
+                padding: 15px 0;
+            }
+        }
+        h1, h2, h3, h4, h5, h6 {
+            &[data-watermark]::before {
+                font-size: 100px;
+            }
+        }
+    }
+    .column-count-2,
+    .column-count-3,
+    .column-count-4{
+        column-count: 1;
+    }
+    .error-block {
+        .error-title {
+            font-size: 150px;
+        }
+    }
+
+}
+
+@media all and (max-width: 575px){
+    
+    .py-80, .pb-80 {
+        padding-bottom: 40px;
+    }
+    .py-80, .pt-80 {
+        padding-top: 40px;
+    }
+    .py-100, .pb-100 {
+        padding-bottom: 50px;
+    }
+    .py-100, .pt-100 {
+        padding-top: 50px;
+    }
+    .footer-widget-menu.column-4 {
+        column-count: 3;
+    }
+    .counter-wrap div[class^="col"]::before {
+        content: none;
+    }
+    .timeline{
+        &::before{
+            left: 12px;
+        }
+    }
+    .timeline-item{
+        width: 100%;
+        padding-left: 30px;
+        &:nth-child(2n+1){
+            text-align: left;
+        }
+        .tli-head{
+            &::before{
+                left: auto !important;
+                right: 15px !important;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                height: 25px !important;
+                width: 25px !important;
+                background: var(--secondary);
+                border-radius: 50%;
+                border: 3px solid var(--success);
+                right: auto !important;
+                bottom: -13px !important;
+                z-index: 5;
+                left: -29px;
+            }
+        }
+        time{
+            &::before{
+                color: rgba(var(--white-alpha), 0.12);
+            }
+        }
+    }
+    .article-lists{
+        padding-left: 0;
+        .article-item{
+            &::before{
+                content: none;
+            }
+        }
+    }
+    .work-flow-video {
+        .play-icon{
+            max-width: 45px;
+        }
+    }
+
+    .blog-details-inner{
+        padding: 20px;
+    }
+    .faq-item{
+        padding-left: 70px;
+        &::before{
+            font-size: 50px;
+        }
+    }
+    .accordion-item {
+        .accordion-title {
+            padding: 18px 45px 18px 20px;
+            &::before{
+                font-size: 15px;
+            }
+        }
+    }
+    .demo-block{
+        min-height: auto;
+    }
+    .demo-block-responsive{
+        padding: 15px;
+    }
+}
+
+@media all and (max-width: 400px){
+    .footer-widget-menu.column-3,
+    .footer-widget-menu.column-4 {
+        column-count: 2;
+    }
+    .hero-banner-text {
+        h2 {
+            font-size: 28px;
+        }
+        h1{
+            font-size: 37px;
+            span{
+                font-size: 37px;
+            }
+        }
+    }
+}

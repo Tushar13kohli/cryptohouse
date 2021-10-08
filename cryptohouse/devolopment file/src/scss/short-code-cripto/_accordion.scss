@@ -1,0 +1,229 @@
+
+.accordions-wrapper {
+    max-width: 1270px;
+    margin-left: 200px;
+}
+
+.accorion-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+.accordion-title {
+    h6 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        margin-bottom: 25px;
+    }
+}
+.accordion {
+    background-color: var(--accordion-title-bg);
+    padding: 30px;
+    border: 1px solid transparent;
+    transition: all .3s ease-in-out;
+    &.active {
+        background-color: transparent;
+        border-color: var(--w-light);
+        .accordion-head {
+            h6 {
+                color: var(--font-color);
+                i {
+                    color: var(--btn-primary);
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    .accordion-head {
+        cursor: pointer;
+        h6 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0px;
+
+            i {
+                color: var(--btn-primary);
+                transition: all .3s ease-in-out;
+                font-size: 20px;
+            }
+        }
+    }
+    .accordion-body {
+        display: none;
+        padding: 0;
+        padding-top: 10px;
+        p {
+            font-weight: 14px;
+            line-height: 21px;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.accorderon-2 {
+    background-color: var(--btn-primary);
+    .accordion-head {
+        h6 {
+            color: var(--white);
+            i {
+                color: var(--white);
+            }
+        }
+    }
+}
+
+.accorderon-3 {
+    &.active {
+        .accordion-head {
+            h6 {
+                color: var(--btn-primary);
+                i {
+                    background-color: var(--fafafa);
+                    color: var(--font-color);
+                }
+            }
+        }
+    }
+    .accordion-head {
+        h6 {
+            i {
+                color: var(--white);
+                height: 32px;
+                width: 32px;
+                background-color:var(--btn-primary);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+.accorderon-4 {
+    &.active {
+        .accordion-head {
+            .cp-icon {
+                background-color: var(--accordion-title-bg);
+                border-color: var(--w-light);
+                i {
+                    color: var(--btn-primary);
+                }
+            }
+        }
+    }
+    .accordion-head {
+        position: relative;
+        .cp-icon {
+            width: 32px;
+            height: 32px;
+            background-color: var(--btn-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid transparent;
+            transition: all .3s ease-in-out;
+            position: absolute;
+            top: 0;
+            right: 0px;
+
+            i {
+                color: var(--white);
+            }
+        }
+    }
+}
+
+// Responsive 
+@media screen and (max-width: 1350px){
+    .accordions-wrapper {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .accordions-wrapper {
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 991px){
+    .accordions-wrapper {
+        margin-left: 0px;
+        margin: 0 auto;
+    }
+    .accordion {
+        .accordion-head {
+            h6 {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .accorion-wrap {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .accordion {
+        padding: 20px;
+    }
+    .accordion-title {
+        h6 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 575px){
+   
+    .accorion-wrap {
+        grid-gap: 20px;
+    }
+    .accordion-title {
+        h6 {
+            font-size: 18px;
+            line-height: 27px;
+            margin-bottom: 15px;
+        }
+    }
+    .accordion {
+        padding: 10px;
+        .accordion-head {
+            h6 {
+                font-size: 15px;
+                i {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .accorderon-3 {
+        .accordion-head {
+            h6 {
+                i {
+                    height: 25px;
+                    width: 25px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .accorderon-4 {
+        .accordion-head {
+            .cp-icon {
+                width: 25px;
+                height: 25px;
+                i {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

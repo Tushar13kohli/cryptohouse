@@ -1,0 +1,213 @@
+.pegination-wrapper {
+    max-width: 1400px;
+    margin-left: 130px;
+}
+
+.pegination-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.single-pegination {
+    background: var(--white);
+    box-shadow: 0px 10px 40px var(--shadow-color);
+    border-radius: 10px;
+    padding: 25px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    a {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 500;
+        color: var(--font-color);
+        transition: all .3s ease-in-out;
+        margin: 0px 5px;
+
+        &:hover, &.active {
+            color: var(--btn-primary);
+        }
+    }
+}
+
+.pegination-2 {
+    a {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:transparent;
+        margin: 0px 2px;
+        &:last-child, &:first-child {
+            width: 0;
+            height: 0;
+            &:hover {
+                background-color: none;
+                color: var(--btn-primary);
+            }
+        }
+        &:hover, &.active {
+            background-color: var(--btn-primary);
+            color: var(--white);
+        }
+    }
+}
+.pegination-3 {
+    a {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--w-light);
+        justify-content: center;
+        background-color:transparent;
+        margin: 0px 2px;
+        &:last-child, &:first-child {
+            width: 0;
+            height: 0;
+            &:hover {
+                background-color: none;
+                color: var(--btn-primary);
+            }
+        }
+        &:hover, &.active {
+            background-color: var(--btn-primary);
+            color: var(--white);
+            border-color: transparent;
+        }
+    }
+}
+
+.pegination-4 {
+    a {
+        border: unset;
+        border-radius: 5px;
+        &:last-child, &:first-child {
+            width: 0;
+            height: 0;
+            color: var(--btn-primary);
+            &:hover {
+                background-color: none;
+                color: var(--btn-primary);
+            }
+        }
+        &:hover, &.active {
+            background-color: var(--btn-primary);
+            color: var(--white);
+        }
+    }
+}
+
+.pegination-5  {
+    a {
+        position: relative;
+        &:last-child, &:first-child {
+            font-size: 14px;
+            font-weight: 500;
+            &::before {
+                display: none;
+            }
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 0px;
+            height: 3px;
+            background-color: var(--btn-primary);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all .3s ease-in-out;
+        }
+        &.active {
+            &::before {
+                width: 40px;
+            }
+        }
+        &:hover:before {
+            width: 40px;
+        }
+    }
+}
+
+.pegination-6  {
+    a {
+        &:last-child, &:first-child {
+            font-size: 14px;
+            font-weight: 500;
+            border: 1px solid var(--btn-primary);
+            padding: 7px 10px;
+            border-radius: 3px;
+            &:hover {
+                background-color: var(--btn-primary);
+                color: var(--white);
+            }
+        }
+    }
+}
+
+
+
+
+
+// Responsive 
+@media screen and (max-width: 1350px){
+    .pegination-wrapper {
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 1199px){
+    .pegination-wrapper {
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 991px){
+    .pegination-wrapper {
+        margin-left: 0px;
+    }
+    .pegination-wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 767px){
+    .pegination-wrapper {
+        margin-left: 0px;
+    }
+    .pegination-wrap {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .single-pegination {
+        a {
+            font-size: 18px;
+        }
+    }
+    .pegination-2 {
+        a {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .pegination-3 {
+        a {
+            width: 38px;
+            height: 38px;
+        }
+    }
+}
+@media screen and (max-width: 575px){
+    .single-pegination {
+        padding: 30px 20px;
+    }
+    .pegination-3 {
+        a {
+            width: 34px;
+            height: 34px;
+        }
+    }
+}

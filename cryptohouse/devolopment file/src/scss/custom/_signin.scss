@@ -1,0 +1,90 @@
+#particles{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.signin-page-sec {
+	position: relative;
+    z-index: 5;
+    background: var(--secondary-gradient2);
+    &::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background: url('../img/water-shape2.png') no-repeat scroll left bottom/cover;
+        z-index: -1;
+    }
+    .header-top{
+        p{
+            color: var(--white-permanent);
+        }
+        .lang-text{
+            color: var(--white-permanent);
+            &::before{
+                border-color: var(--white-permanent);
+            }
+        }
+        .lang-item {
+            input{
+                &:checked + span{
+                    color: var(--primary);
+                }
+            }
+            span{
+                color: var(--white-permanent);
+            }
+        }
+    }
+    
+    ::-webkit-input-placeholder{
+        color: var(--white-permanent);
+    }
+    
+    ::-moz-input-placeholder{
+        color: var(--white-permanent);
+    }
+}
+
+.signin-block {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 5;
+    input {
+        background: rgba(var(--white-alpha), .2);
+        border-radius: 7px;
+        color: var(--white-permanent);
+        &:focus{
+            border-color: var(--white-permanent);
+        }
+    }
+    p{
+        color: var(--white-permanent);
+        font-size: 18px;
+    }
+}
+
+.input-icon-group-right {
+	position: relative;
+    input{
+        padding-right: 55px;
+    }
+    .input-icon{
+        position: absolute;
+        height: 100%;
+        right: 0;
+        top: 0;
+        font-size: 22px;
+        padding: 2px 15px 2px 5px;
+        display: flex;
+        align-items: center;
+        color: var(--white-permanent);
+    }
+}
+

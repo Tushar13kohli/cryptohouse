@@ -1,0 +1,33 @@
+{
+  "name": "goshopsweet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/rearclients/goshopsweet.git"
+  },
+  "keywords": [],
+  "author": "Electron Themes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/rearclients/goshopsweet/issues"
+  },
+  "homepage": "https://gitlab.com/rearclients/goshopsweet#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-twig": "^1.2.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.2"
+  }
+}

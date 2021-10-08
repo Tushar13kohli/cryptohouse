@@ -1,0 +1,106 @@
+:root{
+    --ff-primary: 'Mukta', sans-serif;
+    --ff-secondary: 'Poppins', sans-serif;;
+}
+
+:root{
+    --body-bg: #ffffff;
+    --body-color: #555555;
+    --menu-bg: #ffffff;
+    --primary: #FF002E;
+    --primary-gradient: linear-gradient(180deg, #FF7A00 -12.44%, #FF002E 100%);
+    --primary-gradient2: linear-gradient(90deg, #FF002E 0%, #FF7A00 100%);
+    --primary-light: #FFF2F5;
+    --secondary: #000349;
+    --secondary-alpha: 0, 3, 73;
+    --secondary-gradient: linear-gradient(90deg, #000349 0%, #005B8E 100%);
+    --secondary-gradient2: linear-gradient(179.09deg, #000349 -1.11%, #005B8E 99.25%);
+    --success: #00B2FF;
+    --success-alpha: 0, 178, 255;
+    --success-gradient: linear-gradient(90deg, #00B2FF 0%, #00FFC2 100%);
+    --success-gradient2:  linear-gradient(to right, #00B2FF 0%, #00FFC2 80%);
+    --heading: #121B25;
+    --paragraph: #555555;
+    --border: #dadada;
+    --border-light: #bcbcbc;
+    --border-light-alpha: 188, 188, 188;
+    --menu-color: #0E0F1B;
+    --white: #ffffff;
+    --black: #000000;
+    --black2: #121B25;
+    --black-gradient: linear-gradient(#000000, #000000);
+    --black-alpha: 0, 0, 0;
+    --white-permanent: #ffffff;
+    --white-alpha: 255, 255, 255;
+    --gray: #c4c4c4;
+    --gray-alpha: 196, 196, 196;
+    --light-gray: #F9F9F9;
+    --light-gray2: #FaFaFa;
+    --light-gray-alpha: 249, 249, 249;
+    --footer-bg: #ffffff;
+    --copyright-color: #666666;
+    --copyright-bg: #F9F9F9;
+    --title-data-watermark: rgba(85, 85, 85, 0.15);
+    --card-bg: #ffffff;
+    --title-border: #eee;
+    // theme blue all color code here
+    --theme-blue:#0E0061;
+    --theme-blue-light:#5D44BE;
+    --theme-sky:#00FFC2;
+    --theme-blue-dark:#000349;
+    --theme-blue2:#002196;
+    --theme-blue3:#001C7E;
+    --cripto-border:rgba(223, 255, 255, 0.7);
+    --blur-white:rgba(255, 255, 255, 0.1);
+    --white-water-color:rgba(255, 255, 255, 0.1);
+    --bit-gradient:linear-gradient(0deg, rgba(0, 19, 129, 0.95) 0%, rgba(0, 81, 172, 0.95) 100%);
+    --bit-gradient-rgba:linear-gradient(0deg, rgba(0, 19, 129, 0.7) 0%, rgba(0, 81, 172, 0.7) 100%);
+    --bit-gradient2:linear-gradient(-90deg, rgba(0, 19, 129, 0.95) 0%, rgba(0, 81, 172, 0.95) 100%);
+}
+////////////////////all short code variable here
+
+:root {
+    --theme-color: #000349;
+    --font-color: #333333;
+    --w-light:#EEEEEE;
+    --option-color: #777777;
+    --disable-color: #666666;
+    --disable-color-2: #BBBBBB;
+    --fafafa: #FAFAFA;
+    --star-color: #FBB500;
+    --denger-2:#FF2D5F;
+    --table-change-span-color: #12F6AB;
+    --subscribe-button-font-color: #002196;
+
+    --option-border: #CEE5EF;
+    --disable-border: #C2C2C2;
+
+    --split-icon-bg: rgba(255, 255, 255, 0.2);
+    --split-icon-bg-2: #0A6EE3;
+    --accordion-title-bg:#F9F9F9;
+
+    --shadow-color:rgba(14, 95, 189, 0.07);
+    --option-shadow: rgba(0, 0, 0, 0.05);
+
+    --video-overlay: rgba(8, 71, 94, 0.5);
+
+    --gradient: linear-gradient(90deg, #00B2FF 0%, #00FFC2 100%);
+    --alert-box-3-overlay: linear-gradient(90deg, rgba(8, 71, 94, 0.63) 0%, rgba(8, 71, 94, 0) 100%);
+    --alert-box-5-bg:linear-gradient(88.1deg, #9E00FF 0%, #00D092 100%);
+    --subscribe-bg: #002196;
+    --subscribe-from-bg: rgba(255, 255, 255, 0.1);
+    --footer-overlay: linear-gradient(180deg, rgba(0, 19, 129, 0.95) 0%, rgba(0, 81, 172, 0.95) 100%);
+
+    // Button Color 
+    --btn-primary: #127BF6;
+    --btn-secondary: #08475E;
+    --success: #12F6AB;
+    --warning: #FFB628;
+    --danger: #FF2D5F;
+    --disable: #EEEEEE;
+
+    // Alert Box Color
+    --alert-1-bg: #F1FFFA;
+    --alert-2-bg: #FFFAFB;
+    --alert-4-bg: #FDFFF2;
+}

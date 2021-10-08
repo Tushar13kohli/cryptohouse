@@ -1,0 +1,232 @@
+.short-counter-wrapper {
+    max-width: 690px;
+    margin-left: 400px;
+}
+
+
+
+.single-counter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.single-countdown-item {
+    // max-width: 140px;
+    height: 150px;
+    border: 1px solid var(--w-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .ci-inner {
+        font-size: 48px;
+        font-weight: 700;
+        color: var(--theme-color);
+        line-height: 72px;
+        padding-bottom: 10px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 30px;
+        color: var(--option-color);
+        margin-bottom: 0px;
+    }
+}
+
+.counter-2 {
+    .single-countdown-item {
+        .ci-inner {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 68px;
+                height: 1px;
+                background-color: var(--black);
+                bottom: 5px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+.counter-3 {
+    .single-countdown-item {
+        border-radius: 10px;
+        justify-content: flex-end;
+        // border-style: solid;
+        // border-width: 1px;
+        // border-image: radial-gradient(#00B2FF, #00FFC2) 1;
+        border: 1px solid var(--success);
+        
+        .ci-inner {
+            padding-bottom: 5px;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h4 {
+            color: var(--white);
+            background-color: var(--theme-color);
+            font-size: 24px;
+            line-height: 40px;
+            padding: 5px;
+            margin-bottom: 0px;
+            border-radius: 0px 0px 10px 10px;
+            border-top: 1px solid var(--extra-border);
+        }
+    }
+}
+
+.counter-4 {
+    .single-countdown-item {
+       height: 100%;
+       border: transparent;
+        .ci-inner {
+            max-width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 1px solid var(--w-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+        h4 {
+            padding-top: 10px;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.counter-5 {
+    .single-countdown-item {
+        max-width: 150px;
+        max-height: 150px;
+        border: 1px solid var(--w-light);
+        border-radius: 50%;
+        .ci-inner {
+            padding: 0;
+        }
+    }
+}
+
+ 
+// Responsive 
+@media screen and (max-width: 1350px){
+    .short-counter-wrapper {
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 1199px){
+    .short-counter-wrapper {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 767px){
+    .single-countdown-item {
+        height: 120px;
+        .ci-inner {
+            font-size: 30px;
+            line-height: 50px;
+            padding-bottom: 0px;
+        }
+        h4 {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+    .single-counter {
+        margin-bottom: 20px;
+    }
+    .counter-3 {
+        .single-countdown-item {
+            h4 {
+                font-size: 16px;
+                line-height: 40px;
+                padding: 0px;
+            }
+        }
+    }
+    .counter-4 {
+        .single-countdown-item {
+            .ci-inner {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+            }
+        }
+    }
+    .counter-5 {
+        .single-countdown-item {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 585px) {
+
+    .single-counter {
+        margin-bottom: 15px;
+        grid-gap: 15px;
+    }
+    .single-countdown-item {
+        height: 80px;
+        .ci-inner {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        h4 {
+            font-size: 12px;
+            line-height: 24px;
+        }
+    }
+    .counter-2 {
+        .single-countdown-item {
+            .ci-inner {
+                &::before {
+                    width: 40px;
+                    bottom: -1px;
+                }
+            }
+        }
+    }
+    .counter-3 {
+        .countdown-item {
+            h4 {
+                font-size: 12px;
+                line-height: 28px;
+            }
+        }
+    }
+    .counter-4 {
+        .single-countdown-item {
+            .ci-inner {
+                height: 70px;
+                width: 70px;
+            }
+            h4 {
+                padding-top: 0px;
+            }
+        }
+    }
+    .counter-5 {
+        .single-countdown-item {
+            height: 70px;
+            width: 70px;
+            h4 {
+                line-height: 20px;
+            }
+        }
+    }
+}

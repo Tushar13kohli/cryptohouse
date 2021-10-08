@@ -1,0 +1,426 @@
+
+.coin-exchange-wrapper {
+  max-width: 860px;
+  margin-left: 400px;
+}
+.exchange-currency-left, .exchange-currency-right {
+  label {
+    font-size: 16px;
+    color: var(--theme-color);
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: block;
+  }
+}
+.exchange-wrap {
+  background-color: var(--white);
+  box-shadow: 0px 10px 40px var(--shadow-color);
+  border-radius: 10px;
+  padding: 70px;
+}
+
+
+.exchange-currency {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  .list{
+    height: 300px;
+    overflow-y: auto;
+  }
+}
+
+.exchange-box {
+    .currency {
+      display: flex;
+      position: relative;
+        input {
+          height: 60px;
+          width: 100%;
+          background-color: var(--fafafa);
+          border: 1px solid var(--w-light);
+          border-radius: 5px;
+          padding: 20px;
+          outline: none;
+        }
+        .select-country {
+          background-color: var(--warning);
+          border: transparent;
+          border-radius: 5px;
+          position: absolute;
+          width: 95px;
+          height: 100%;
+          padding: 16px;
+          right: 0;
+          top: 0;
+          font-size: 18px;
+          font-weight: 500;
+          color: var(--theme-color);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          &::after {
+            border-bottom: none;
+            border-right: none;
+            content: '\eab2';
+            font-family: IcoFont;
+            height: 15px;
+            margin-top: unset;
+            pointer-events: none;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform-origin: unset;
+            transform: translateY(-50%) rotateX(0deg);
+            width: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &.open {
+            &::after {
+              transform: translateY(-50%) rotateX(180deg);
+            }
+        }
+      }
+    }
+}
+
+.exchange-currency-left {
+  width: 45%;
+}
+.exchange-currency-middle {
+  width: 10%;
+  padding-top: 40px;
+}
+.exchange-currency-right {
+  width: 45%;
+  .exchange-box {
+    .currency {
+      .select-country {
+        background-color: var(--success);
+      }
+    }
+  }
+}
+
+.change-button {
+  text-align: center;
+  margin-top: 40px;
+  .rate {
+    font-size: 18px;
+    color: var(--theme-color);
+    margin-bottom: 10px;
+  }
+  button {
+    width: 220px;
+    height: 52px;
+    margin: 0;
+  }
+}
+
+// Bye & Sale 
+.bye-sale-wrappper {
+  padding-top: 70px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.bye-sale-content {
+  h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--theme-color);
+    line-height: 33px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+}
+
+.bye-sale-wrap {
+  margin-top: 40px;
+  background-color: var(--fafafa);
+  border: 1px solid var(--w-light);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.bye-sale-left {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+
+  .single-bye-sale {
+    input {
+      border: 1px solid var(--w-light);
+      padding: 15px 20px;
+      border-radius: 5px;
+      width: 100%;
+      height: 52px;
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--theme-color);
+      outline: none;
+      &::-moz-placeholder {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--theme-color);
+        opacity: 1;
+      }
+      &::placeholder {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--theme-color);
+        opacity: 1;
+      }
+    }
+  }
+  .single-bye-sale-box-1 {
+    max-width: 90px;
+  }
+  .single-bye-sale-box-2 {
+    span {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--theme-color);
+      margin: 0px 20px;
+      display: inline-block;
+    }
+  }
+  .single-bye-sale-box-3 {
+    max-width: 150px;
+  }
+
+  .select-bye-sale {
+    margin-left: 20px;
+    max-width: 100px;
+    width: 100%;
+
+    .nice-select {
+      border-radius: 5px;
+      border: solid 1px var(--w-light);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--theme-color);
+      height: 52px;
+      line-height: 1;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+
+      &::after {
+        border-bottom: none;
+        border-right: none;
+        content: '\eab2';
+        font-family: IcoFont;
+        color: var(--theme-color);
+        height: 15px;
+        margin-top: unset;
+        pointer-events: none;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%) rotateX(0deg);
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+      }
+      .list{
+        li{
+          margin-block-end: 0px;
+          &:before{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.btc-to-usd {
+  max-width: 250px;
+  width: 100%;
+
+  .nice-select {
+      border-radius: 5px;
+      border: solid 1px var(--w-light);
+      font-size: 18px;
+      font-weight: 500;
+      background-color: var(--btn-primary);
+      color: var(--white);
+      height: 52px;
+      line-height: 1;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      &::after {
+        border-bottom: none;
+        border-right: none;
+        content: '\eab2';
+        font-family: IcoFont;
+        color: var(--white);
+        height: 20px;
+        margin-top: unset;
+        pointer-events: none;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%) rotateX(0deg);
+        font-size: 22px;
+      }
+      &.open {
+        &::after {
+            transform: translateY(-85%) rotateX(180deg);
+        }
+    }
+      .list {
+        background-color: var(--white) !important;
+        width: 100%;
+        position: absolute;
+        color: var(--font-color);
+        margin-bottom: 0px;
+        li{
+          margin-bottom: 0px;
+          &:before{
+            display: none;
+          }
+        }
+      }
+    }
+}
+
+// Responsive 
+@media screen and (max-width: 1350px){
+  .coin-exchange-wrapper {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 1199px){
+  .coin-exchange-wrapper {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 991px){
+  .coin-exchange-wrapper {
+      margin-left: 0px;
+  }
+}
+@media screen and (max-width: 767px){
+  .exchange-wrap {
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .bye-sale-wrappper {
+    padding-top: 40px;
+  }
+  .exchange-currency-middle {
+    width: 10%;
+    padding-top: 40px;
+    .btn {
+      padding: 10px;
+    }
+  }
+  .bye-sale-wrap {
+    flex-direction: column;
+  }
+  .btc-to-usd {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 575px){
+ 
+  .exchange-currency {
+    flex-direction: column;
+  }
+  .exchange-box {
+    .currency {
+      input {
+        height: 50px;
+      }
+    }
+  }
+  .exchange-currency-left {
+    width: 100%;
+  }
+  .exchange-currency-right {
+    width: 100%;
+
+  }
+  .exchange-currency-middle {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .exchange-currency-left, .exchange-currency-right {
+    label {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+  .bye-sale-wrappper {
+    padding-top: 30px;
+  }
+  .bye-sale-wrap {
+    padding:20px 10px;
+  }
+  .bye-sale-content {
+    h4 {
+      font-size: 20px;
+      line-height: 30px;
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .bye-sale-left {
+    margin-right: 0;
+    .single-bye-sale {
+      input {
+        padding: 5px 10px;
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+        &::-moz-placeholder {
+          font-size: 16px;
+        }
+        &::placeholder {
+          font-size: 16px;
+        }
+      }
+    }
+    .single-bye-sale-box-2 {
+      span {
+        margin: 0px 10px;
+      }
+    }
+    .select-bye-sale {
+      max-width: 80px;
+      margin-left: 10px;
+      .nice-select {
+        font-size: 16px;
+        height: 40px;
+        padding: 10px;
+      }
+    }
+  }
+  .btc-to-usd {
+    .nice-select {
+      font-size: 16px;
+      &::after {
+        height: 18px;
+        font-size: 20px;
+    }
+    }
+  }
+}
